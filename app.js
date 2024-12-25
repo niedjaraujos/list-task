@@ -1,7 +1,9 @@
 const buttonAdicionar = document.querySelector('.adcTask');
-buttonAdicionar.addEventListener('click', () => {
+const inputTask = document.querySelector('input')
 
-    let inputTask = document.querySelector('input')
+
+ function addTask(){
+   
     let task = inputTask.value
 
     document.querySelector('p').textContent = "Tarefa Adicionada!";
@@ -20,10 +22,17 @@ buttonAdicionar.addEventListener('click', () => {
 
     inputTask.value = '';
 
-    const removerTarefa = close ;
+    const removerTarefa = close;
     removerTarefa.addEventListener('click', () => {
-       newTask.remove()
+        newTask.remove()
     })
-});
+};
+buttonAdicionar.addEventListener( 'click', addTask)
+inputTask.addEventListener ('keydown', (e) =>{
+    if (e.key === 'Enter') {
+        addTask();
+    }
+})
+
 
 

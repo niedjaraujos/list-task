@@ -51,7 +51,7 @@ input {
 
 .adcTask{
     background-color: #fc9cd4;
-    padding: 10px 20px;
+    padding: 8px 20px 4px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -83,9 +83,10 @@ ul {
 li {
     background-color: #fdd1e9;
     max-width: 90%;
+    height: 30px;
     border-radius: 5px;
     color: #760146;
-    padding: 2px 10px;
+    padding: 4px;
     font-size: 1.2em;
     text-align: left;
     display: flex;
